@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>Information</title>
+</head>
+<body>
+	<form method = "post" wicket:id="addForm">
+		<div style = "color:red;" wicket:id = "feedbackPanel"></div>
+		<table style="width: 65%;" align="center">
+		 	<tr>
+	             <td align="left">
+	                 FirstName : <input type="text" wicket:id="firstName" value=""/>
+	             </td>
+	             <td align="left">
+	                 LastName : <input type="text" wicket:id="lastName"  value=""/>
+	             </td>
+	         </tr>
+	         <tr>
+	             <td align="left">
+	                 Email : <input type="email" wicket:id="email"  value=""/>
+	             </td>
+	             <td align="left">
+	                 Company : <input type="text" wicket:id="company"  value=""/>
+	             </td>
+	         </tr>
+	         <tr>
+	             <td align="left">
+	                 Phone : <input type="text" wicket:id="phone"  value=""/>
+	             </td>
+	             <td align="left">
+	                 Country : <input type="text" wicket:id="country"  value=""/>
+	             </td>
+	         </tr>
+	         <tr>
+	             <td align="left">
+	                 Address : <input type="text" wicket:id="address"  value=""/>
+	             </td>
+	         </tr>
+	         <tr>
+	             <td align="left">
+	                 <input type="submit" wicket:id="yesButton" value="Yes" />
+	             </td>
+	             <td align="left">
+	                 <input type="submit" wicket:id="noButton" value="No" />
+	             </td>
+	         </tr>
+	    </table>
+	</form>
+</body>
+</html>

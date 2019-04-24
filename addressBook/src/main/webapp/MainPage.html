@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<head>
+<link rel="stylesheet" href="Table.css">
+<meta charset="UTF-8">
+<title>Main Page</title>
+</head>
+<body>
+	<input wicket:id = "addButton" type = "button" value = "Add"/>
+	<input wicket:id = "logoutButton" type = "button" value = "Logout"/>
+	<br/><br/>
+	<form wicket:id = "filterForm">
+		<fieldset style="display: inline-block;">
+            <legend>Find FirstName</legend>
+            <div style="float: right;">FirstName: <input wicket:id="firstName"/></div>
+        </fieldset>
+        <br/><br/>
+        <table class="dataview" wicket:id = "grid"></table>
+        <br/><br/>
+	</form>
+	<input wicket:id = "csvButton" type = "button" value = "Export to CSV"/>
+	<br/>
+	<div wicket:id = "addWindow"></div>
+	<div wicket:id = "editWindow"></div>
+	<div wicket:id = "warndialog"></div>
+</body>
+</html>

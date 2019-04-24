@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Create A User</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	   <form id="CreateForm" method="post" wicket:id="CreateForm">
+			<div style = "color:red;" wicket:id = "feedbackPanel"></div>
+			<p style = "color:red;" wicket:id="createStatus" />
+			<!-- <div wicket:id = "dialog"></div> -->
+	        <fieldset>
+	            <span>UserName: </span><input type="text" wicket:id="userId" />
+	            <BR>
+	            <span>Password: </span><input type="password" wicket:id="password" /> 
+	            <BR>
+	            <span>Repeat Password: </span><input type="password" wicket:id="repeatPassword" /> 
+	            <BR>
+	            <span>Phone: </span><input type="text" wicket:id="phone" />
+	            <BR>
+	            <span>Address: </span><input type="text" wicket:id="address" /> 
+	            <BR>
+	            <span>Email: </span><input type="email" wicket:id="email" />
+	            <BR>
+	            <p>
+	                <input type="submit" name="Register" value="Create"/>
+	                <input wicket:id = "backButton" type = "button" value = "Back"/>
+	            </p>
+	        </fieldset>    
+	  </form>    
+</body>
+</html>
